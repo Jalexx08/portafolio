@@ -1,0 +1,114 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.aboutme {
+  padding: 2rem;
+}
+
+.bio {
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.photo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  width: 40%;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
+.soft-skill,
+.hard-skill {
+  border: 1px solid blue;
+  font-size: 1.2rem;
+  h3 {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  ul {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    li {
+      margin: 1rem 0;
+    }
+  }
+}
+
+.socialmedia {
+  padding: 1rem;
+  h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #fff;
+  }
+  margin-top: 1rem;
+  background: linear-gradient(to bottom, #317bdf, #fff);
+  border: 1px solid #000;
+  // background: linear-gradient(to right, blue, white);
+  ul {
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      text-align: center;
+    }
+  }
+}
+
+.socialmedia>ul :hover{
+  transform: scale(1.2);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .content,
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .socialmedia {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+
+  .aboutme {
+    padding: 0.5rem;
+    .bio {
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+//  @media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+//  @media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+//  @media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+//  @media only screen and (min-width: 1200px) {...}
