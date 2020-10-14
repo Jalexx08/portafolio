@@ -1,0 +1,35 @@
+.content {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #317bdf;
+  .introduceme {
+    text-transform: none;
+    display: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .hola {
+    width: 60px;
+  }
+
+  p {
+    font-style: italic;
+    font-weight: 600;
+  }
+}
+.main-img {
+  margin-top: 1rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .content {
+    font-size: 1.2rem;
+    .introduceme {
+      display: 3rem;
+    }
+    .hola {
+      width: 30px;
+    }
+
+  }
+}
